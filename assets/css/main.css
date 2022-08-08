@@ -1,0 +1,31 @@
+/* Generic reset styles */
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    background-image:url(../img/header_background.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 675px ;
+}
+
+main, header, footer{
+    text-align: center;
+}
+
+#small_side{
+    background: black;
+    width: fit-content;
+}
+
+/* Main styles */
+header h1 {
+    color: white;
+}

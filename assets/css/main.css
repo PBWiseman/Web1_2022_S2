@@ -1,0 +1,21 @@
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #146798;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    /* caps */
+}
+p{
+    background: hotpink;
+    text-align: center;
+}
+ul{
+    list-style:upper-latin;
+}
+.footer{
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,3 +1,52 @@
+/* Generic reset styles */
 body {
     margin: 0;
+    background: #BC511B;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Main page styles */
+header{
+    height:100px;
+}
+
+svg{
+    fill: white
+}
+
+main, nav, footer a, button{
+    color: white;
+}
+
+main{
+    text-align: center;
+}
+
+h1#main_title{
+    font-size: 72px;
+}
+
+h1{
+    font-family: serif;
+}
+
+p, button{
+    font-size: 20px;
+}
+
+button{
+    background: #333;
+}
+
+ul.faq li{
+    background: white;
+    color:black;
+}
+
+footer{
+    background: linear-gradient(#bc511b42, #BC511B);
 }

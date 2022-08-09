@@ -6,48 +6,65 @@ body {
     background-image: url(https://tatai.maori.nz/backgrounds/background-papatuanuku-small.png);
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 /* Main page styles */
-header{
-    height:100px;
+header {
+    height: 100px;
 }
 
-svg{
+nav li.active::before {
+    content: '►';
+}
+
+.quote::before{
+    font-size: 200px;
+    content: '“';
+}
+
+svg {
     fill: white
 }
 
-main, nav, footer a, button{
+main,
+nav,
+footer a,
+button {
     color: white;
 }
 
-main{
+main {
     text-align: center;
 }
 
-h1#main_title{
+h1#main_title {
     font-size: 72px;
 }
 
-h1{
+h1 {
     font-family: serif;
 }
 
-p, button{
+p,
+button {
     font-size: 20px;
 }
 
-button{
+button {
     background: #333;
 }
 
-ul.faq li{
+ul.faq li {
     background: white;
-    color:black;
+    color: black;
 }
 
-footer{
+ul.faq li div::before {
+    content: '►';
+}
+
+footer {
     background: linear-gradient(#bc511b42, #BC511B);
 }

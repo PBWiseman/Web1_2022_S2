@@ -1,3 +1,5 @@
+/*
+This is class 1 practice
 .main{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #146798;
@@ -5,7 +7,6 @@
 h1{
     color: white;
     text-transform: uppercase;
-    /* caps */
 }
 p{
     background: hotpink;
@@ -18,4 +19,13 @@ ul{
     font-size: 32px;
     font-weight: bold;
     font-style: italic;
+} */
+
+div div:nth-of-type(3) div {
+    background: green;
+}
+
+div div div:hover
+{
+    background: red;
 }

@@ -1,155 +1,26 @@
-* {
-    box-sizing: border-box;
+h1 {
+    background: lightblue;
+    padding: 10px 30px;
 }
 
-/* Generic reset styles */
-body {
-    margin: 0;
-    background: #BC511B;
-    font-family: sans-serif;
-    background-image: url(https://tatai.maori.nz/backgrounds/background-papatuanuku-small.png);
-    background-repeat: repeat-y;
+p {
+    background: lightgreen;
+    margin: 15px;
+    border: 10px solid green;
 }
 
 ul {
+    background: lightsalmon;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Main page styles */
-
-section:not(#main_section) {
-    text-align: left;
+li{
+    border-bottom: 10px solid white;
 }
 
-header {
-    height: 100px;
-}
-
-nav {
-    padding: 10px;
-}
-
-nav li {
-    padding: 15px 10px;
-}
-
-nav li.active::before {
-    content: '►';
-}
-
-.quote::before {
-    font-size: 200px;
-    content: '“';
-}
-
-svg {
-    fill: white
-}
-
-main,
-nav,
-footer a,
-button {
-    color: white;
-}
-
-main {
-    text-align: center;
-    padding: 0 272px;
-}
-
-section {
-    margin: 300px 0;
-}
-
-h1#main_title {
-    font-size: 72px;
-}
-
-h1,
-button {
-    font-family: serif;
-}
-
-/* Special arrow beneath titles created by Adon */
-
-.border,
-.full-border {
-    display: flex;
-}
-
-.cap {
-    width: 15px;
-    border-bottom: 15px solid white;
-    border-bottom-left-radius: 100%;
-    border-top-left-radius: 100%;
-}
-
-.cap2 {
-    border: 7.5px solid white;
-    border-left-color: transparent;
-}
-
-.body {
-    width: 40px;
-    border-bottom: 15px solid white;
-}
-
-.arrow {
-    border: 7.5px solid white;
-    border-bottom-color: transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-}
-
-.arrow2 {
-    width: 15px;
-    border-bottom: 15px solid white;
-    border-bottom-right-radius: 100%;
-    border-top-right-radius: 100%;
-}
-
-p {
-    font-size: 20px;
-}
-
-button {
-    background: #333;
-    padding: 20px;
-    width: 260px;
-    font-size: 20px;
-    border: none;
-}
-
-button:hover {
-    background: #777;
-}
-
-ul.faq li {
-    background: white;
-    color: black;
-    padding: 20px 0;
-    margin: 20px 0;
-    text-align: left;
-}
-
-ul.faq li,
-img {
-    border-radius: 5px;
-}
-
-.bio_img {
-    border-radius: 100%;
-}
-
-ul.faq li div::before {
-    content: '►';
-}
-
-footer {
-    background: linear-gradient(#bc511b42, #BC511B);
-    border-top: 1px solid lightgrey;
-    padding: 25px;
+.footer {
+    background: lightslategray;
+    padding:20px;
 }

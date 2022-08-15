@@ -25,9 +25,17 @@ header{
     height: 675px ;
 }
 
+main, header{
+    padding: 0 400px;
+}
+
 header h1 {
     color: white;
     text-align: left;
+}
+
+header img{
+    text-align: right;
 }
 
 #small_side{
@@ -42,4 +50,19 @@ nav#small_side ul li {
 
 section#top_section{
     text-align: center;
+}
+
+footer{
+    padding: 0 300px;
+    background-color: black;
+    color: white;
+}
+
+footer a{
+    color: white;
+    
+}
+
+footer ul:nth-child(2){
+    text-align: right;
 }

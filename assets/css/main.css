@@ -29,6 +29,9 @@ header {
 
 nav {
     padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 nav li {
@@ -111,6 +114,8 @@ button {
     border-top-right-radius: 100%;
 }
 
+/*End of arrow */
+
 p {
     font-size: 20px;
 }
@@ -152,4 +157,7 @@ footer {
     background: linear-gradient(#bc511b42, #BC511B);
     border-top: 1px solid lightgrey;
     padding: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

@@ -17,6 +17,7 @@ ul{
 
 
 /* Main styles */
+
 header{
     background-image:url(../img/header_background.webp);
     background-repeat: no-repeat;
@@ -24,10 +25,6 @@ header{
     background-position: center;
     height: 675px;
     padding: 0 400px;
-}
-
-main{
-    padding: 100px 400px 0;
 }
 
 header h1 {
@@ -39,6 +36,20 @@ header img{
     text-align: right;
 }
 
+header nav {
+    display: none;
+}
+
+button{
+    border: none;
+    background:transparent;
+    height: 40px;
+    width: 40px;
+}
+
+main{
+    padding: 100px 400px 0;
+}
 #small_side{
     background: black;
     width: fit-content;

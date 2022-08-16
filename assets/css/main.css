@@ -22,11 +22,12 @@ header{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    height: 675px ;
+    height: 675px;
+    padding: 0 400px;
 }
 
-main, header{
-    padding: 0 400px;
+main{
+    padding: 100px 400px 0;
 }
 
 header h1 {
@@ -42,6 +43,11 @@ header img{
     background: black;
     width: fit-content;
     border: 1px solid white;
+    position: fixed;
+    left: 0%;
+    top: 60%;
+    bottom: 40%;
+    height: fit-content;
 }
 
 nav#small_side ul li {

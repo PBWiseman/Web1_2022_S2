@@ -24,14 +24,20 @@ section:not(#main_section) {
 }
 
 header {
-    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+}
+
+header button{
+    display:none;
 }
 
 nav {
     padding: 10px;
     position: fixed;
-    left: 0;
-    top: 0;
 }
 
 nav li {
@@ -159,5 +165,6 @@ footer {
     padding: 25px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
 }

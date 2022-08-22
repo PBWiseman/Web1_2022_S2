@@ -25,18 +25,29 @@ header{
     background-position: center;
     height: 675px;
     padding: 0 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
     color: white;
     text-align: left;
+    align-self: center;
+    justify-self: flex-start;
 }
 
-header img{
-    text-align: right;
+header img:nth-of-type(1) {
+    align-self: flex-start;
+    justify-self:flex-start;
 }
 
-header nav {
+header img:nth-of-type(2) {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+nav#popout {
     display: none;
 }
 
@@ -67,6 +78,24 @@ nav#small_side ul li {
 
 section#top_section{
     text-align: center;
+    margin: 50px 220px;
+}
+
+section#top_section h1{
+    font-size: 30px;
+}
+
+section#top_section p{
+    font-size: 18px;
+}
+
+section#pure_marlborough{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+section#pure_marlborough img{
+    align-items: flex-end;
 }
 
 footer{

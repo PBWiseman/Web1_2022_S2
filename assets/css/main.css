@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+* a{
+    text-decoration:none;
+}
+
 /* Generic reset styles */
 body {
     margin: 0;
@@ -9,6 +13,7 @@ body {
     font-family: sans-serif;
     background-image: url(https://tatai.maori.nz/backgrounds/background-papatuanuku-small.png);
     background-repeat: repeat-y;
+    background-size: 100vw;
 }
 
 ul {
@@ -29,20 +34,31 @@ header {
     left: 0;
     right: 0;
     padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+header svg{
+    height: 75px;
 }
 
 header button{
+    margin-left: auto;
     display:none;
 }
 
 nav {
     padding: 10px;
     position: fixed;
+    display: flex;
+    height: 100vh;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    font-family: serif;
 }
 
-* a{
-    text-decoration:none;
-}
+
 
 nav li {
     padding: 15px 10px;
@@ -78,8 +94,35 @@ section {
     margin: 300px 0;
 }
 
+section#main_section{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+}
+
+section#main_section p{
+    width: 75%;
+}
+
+section h1 {
+    font-size:50px;
+    margin: 15px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+}
+
+.text_block {
+    flex-direction: column;
+    margin-left: 50px;
+}
+
 h1#main_title {
     font-size: 102px;
+    margin-bottom: 0;
 }
 
 h1,
@@ -92,6 +135,7 @@ button {
 .border,
 .full-border {
     display: flex;
+    justify-content: center;
 }
 
 .cap {
@@ -174,4 +218,13 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li{
+    padding: 0 20px;
+    font-weight: bold;
 }

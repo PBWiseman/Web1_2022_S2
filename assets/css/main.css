@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 
-* a{
-    text-decoration:none;
+* a {
+    text-decoration: none;
 }
 
 /* Generic reset styles */
@@ -24,8 +24,10 @@ ul {
 
 /* Main page styles */
 
-section:not(#main_section) {
-    text-align: left;
+section:not(#main_section) h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 20px;
 }
 
 header {
@@ -38,13 +40,13 @@ header {
     align-items: center;
 }
 
-header svg{
+header svg {
     height: 75px;
 }
 
-header button{
+header button {
     margin-left: auto;
-    display:none;
+    display: none;
 }
 
 nav {
@@ -94,30 +96,45 @@ section {
     margin: 300px 0;
 }
 
-section#main_section{
+section#main_section {
     flex-direction: column;
     display: flex;
     align-items: center;
     margin-top: 200px;
 }
 
-section#main_section p{
+section#main_section p {
     width: 75%;
 }
 
+section#about_section {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+section#about_section>div:first-of-type {
+    display: flex;
+    align-items: center;
+}
+
+section#about_section img {
+    width: 100%;
+}
+
+section#about_section .full-border {
+    justify-content: flex-start;
+}
+
 section h1 {
-    font-size:50px;
-    margin: 15px;
+    font-size: 50px;
+    margin: 15px 0;
 }
 
 #about {
     display: flex;
     align-items: center;
-}
-
-.text_block {
-    flex-direction: column;
-    margin-left: 50px;
 }
 
 h1#main_title {
@@ -189,6 +206,12 @@ button:hover {
     background: #777;
 }
 
+.columns_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
 ul.faq li {
     background: white;
     color: black;
@@ -224,7 +247,7 @@ footer ul {
     display: flex;
 }
 
-footer ul li{
+footer ul li {
     padding: 0 20px;
     font-weight: bold;
 }

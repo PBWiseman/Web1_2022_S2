@@ -24,7 +24,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 675px;
-    padding: 0 400px;
+    padding: 0 25%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@ button {
 }
 
 main {
-    padding: 100px 400px 0;
+    padding: 100px 20% 0;
 }
 
 #small_side {
@@ -79,7 +79,7 @@ nav#small_side ul li {
 
 section#top_section {
     text-align: center;
-    margin: 50px 220px;
+    margin: 50px 15%;
 }
 
 section#top_section h1 {
@@ -91,13 +91,33 @@ section#top_section p {
 }
 
 section#pure_marlborough {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 50px;
     align-items: center;
 }
 
-section#pure_marlborough img {
-    align-items: flex-end;
+section#wines{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+section#wines h2{
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+section#wines section{
+    grid-row: 2/3 ;
+}
+
+section#quality {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+    align-items: center;
 }
 
 footer {
@@ -113,4 +133,19 @@ footer a {
 
 footer ul:nth-child(2) {
     text-align: right;
+}
+
+@media (max-width:1450px){
+    section#wines,
+    section#pure_marlborough,
+    section#quality{
+        grid-template-columns: 1fr;
+    }
+
+    section#wines h2{
+        
+    }
+    section#wines section{
+        
+    }
 }

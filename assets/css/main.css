@@ -127,6 +127,26 @@ section#about_section .full-border {
     justify-content: flex-start;
 }
 
+section#bio_section{
+    flex-direction: row;
+    display: flex;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#bio_section h2{
+    font-size: 40px;
+}
+
+section#bio_section div p:first-of-type{
+    padding: 0% 15%;
+    text-align: center;
+}
+
+section#bio_section div p:not(first-of-type){
+    text-align: left;
+}
+
 section h1 {
     font-size: 50px;
     margin: 15px 0;
@@ -208,7 +228,7 @@ button:hover {
 
 .columns_3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 60px;
 }
 
@@ -250,4 +270,27 @@ footer ul {
 footer ul li {
     padding: 0 20px;
     font-weight: bold;
+}
+
+@media (max-width: 770px){
+
+
+    section#about_section,
+    .columns_3{
+        grid-template-columns: 1fr;
+    }
+
+    section#bio_section{
+        grid-template-columns: 1fr;
+    }
+    .main{
+        padding:0 60px;
+    }
+    header,
+    footer{
+        position: static;
+    }
+    h1, h2, h3{
+        text-align: left!important;
+    }
 }

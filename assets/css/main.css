@@ -240,6 +240,11 @@ ul.faq li {
     text-align: left;
 }
 
+ul.faq h3 {
+    display:flex;
+    justify-content: space-between;
+}
+
 ul.faq li,
 img {
     border-radius: 5px;

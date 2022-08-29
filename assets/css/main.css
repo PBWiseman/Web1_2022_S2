@@ -3,13 +3,13 @@
 }
 
 /* Generic reset styles */
-body{
+body {
     margin: 0;
     font-family: sans-serif;
     text-align: left;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -18,10 +18,10 @@ ul{
 
 /* Main styles */
 
-header{
-    background-image:url(../img/header_background.webp);
+header {
+    background-image: url(../img/header_background.webp);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     height: 675px;
     padding: 0 400px;
@@ -39,7 +39,7 @@ header h1 {
 
 header img:nth-of-type(1) {
     align-self: flex-start;
-    justify-self:flex-start;
+    justify-self: flex-start;
 }
 
 header img:nth-of-type(2) {
@@ -51,17 +51,18 @@ nav#popout {
     display: none;
 }
 
-button{
+button {
     border: none;
-    background:transparent;
+    background: transparent;
     height: 40px;
     width: 40px;
 }
 
-main{
+main {
     padding: 100px 400px 0;
 }
-#small_side{
+
+#small_side {
     background: black;
     width: fit-content;
     border: 1px solid white;
@@ -76,39 +77,40 @@ nav#small_side ul li {
     padding: 10px;
 }
 
-section#top_section{
+section#top_section {
     text-align: center;
     margin: 50px 220px;
 }
 
-section#top_section h1{
+section#top_section h1 {
     font-size: 30px;
 }
 
-section#top_section p{
+section#top_section p {
     font-size: 18px;
 }
 
-section#pure_marlborough{
+section#pure_marlborough {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-section#pure_marlborough img{
+
+section#pure_marlborough img {
     align-items: flex-end;
 }
 
-footer{
+footer {
     padding: 0 300px;
     background-color: black;
     color: white;
 }
 
-footer a{
+footer a {
     color: white;
-    
+
 }
 
-footer ul:nth-child(2){
+footer ul:nth-child(2) {
     text-align: right;
 }

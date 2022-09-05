@@ -97,6 +97,10 @@ section#pure_marlborough {
     align-items: center;
 }
 
+.rightarrows{
+    text-align: right;
+}
+
 section#wines{
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;

@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Generic reset styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Main styles */
+
+header {
+    background-image: url(../img/header_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 675px;
+    padding: 0 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: white;
+    text-align: left;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+header img:nth-of-type(1) {
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+header img:nth-of-type(2) {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+nav#popout {
+    display: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+}
+
+main {
+    padding: 100px 20% 0;
+}
+
+#small_side {
+    background: black;
+    width: fit-content;
+    border: 1px solid white;
+    position: fixed;
+    left: 0%;
+    top: 60%;
+    bottom: 40%;
+    height: fit-content;
+}
+
+nav#small_side ul li {
+    padding: 10px;
+}
+
+section#top_section {
+    text-align: center;
+    margin: 50px 15%;
+}
+
+section#top_section h1 {
+    font-size: 30px;
+}
+
+section#top_section p {
+    font-size: 18px;
+}
+
+section#pure_marlborough {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.rightarrows{
+    text-align: right;
+}
+
+section#wines{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    padding: 100px 0;
+    text-align: center;
+    background-color:rgb(250, 250, 250);
+    align-items: flex-end;
+}
+
+section#wines h2{
+    grid-column: 1 / 4;
+}
+
+section#quality {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+    align-items: center;
+}
+
+footer {
+    padding: 0 300px;
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    color: white;
+
+}
+
+footer ul:nth-child(2) {
+    text-align: right;
+}
+
+@media (max-width:1450px){
+    section#wines,
+    section#pure_marlborough,
+    section#quality{
+        grid-template-columns: 1fr;
+    }
+
+    section#wines h2{
+        grid-column: 1;
+    }
+    main {
+        padding: 100px 5% 0;
+    }
+}

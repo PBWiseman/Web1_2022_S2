@@ -22,6 +22,10 @@ ul {
 
 /* Main styles */
 
+p{
+    color: #333;
+}
+
 .divider {
     text-align: center;
     padding:0;

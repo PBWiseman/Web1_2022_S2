@@ -1,5 +1,5 @@
 :root{
-    --padding: 0 20%;
+    --padding: 0 25%;
 }
 
 * {
@@ -23,7 +23,7 @@ ul {
 /* Main styles */
 
 p{
-    color: #333;
+    color: #999;
 }
 
 .divider {
@@ -37,27 +37,26 @@ header {
     background-size: cover;
     background-position: center;
     height: 675px;
-    padding: 0 25%;
+    padding: var(--padding);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+header div {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+header div:nth-of-type(3) {
+    justify-content: end;
 }
 
 header h1 {
     color: white;
     text-align: left;
     align-self: center;
-    justify-self: flex-start;
-}
-
-header img:nth-of-type(1) {
-    align-self: flex-start;
-    justify-self: flex-start;
-}
-
-header img:nth-of-type(2) {
-    align-self: flex-end;
-    justify-self: flex-end;
+    font-weight: 900;
 }
 
 nav#popout {
@@ -93,7 +92,6 @@ section:not(.divider){
 #top_section {
     padding-top: 50px;
     text-align: center;
-    margin: 0 15%;
 }
 
 #top_section h1 {

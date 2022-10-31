@@ -104,12 +104,16 @@ section:not(.divider){
 
 #pure_marlborough,
 #quality,
-#wines {
+#wines,
+#zero,
+#climate {
     display: grid;
     align-items: center;
 }
 
-#pure_marlborough {
+#pure_marlborough,
+#climate,
+#zero {
     grid-template-columns: 2fr 3fr;
 }
 
@@ -136,6 +140,10 @@ section:not(.divider){
     text-align: center;
 }
 
+#wines img{
+    height: 200px;
+}
+
 #wines h2{
     grid-column: 1 / 4;
 }
@@ -147,6 +155,10 @@ section:not(.divider){
 #collage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+#collage img{
+    height: 250px;
 }
 
 #collage1, #collage2{

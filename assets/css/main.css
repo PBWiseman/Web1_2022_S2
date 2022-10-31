@@ -59,8 +59,8 @@ header h1 {
     font-weight: 900;
 }
 
-nav#popout {
-    display: none;
+#popout {
+    visibility: hidden;
 }
 
 button {

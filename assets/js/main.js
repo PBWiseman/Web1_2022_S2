@@ -11,3 +11,13 @@ fetch(`${BASE_URL}/search/photos/?query=wine&per_page=15&client_id=bwVpM_zDrAu_z
         divs[index].append(img);
     });
 })
+
+let menu = document.querySelector("#popout")
+let menuclick = document.querySelector(".fa-solid");
+menuclick.addEventListener("click", _ =>{
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+})

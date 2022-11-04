@@ -87,9 +87,6 @@ nav{
     margin: 0;
 }
 
-#inner_popout div{
-}
-
 #inner_popout div:nth-child(2),
 #inner_popout div:nth-child(3){
     display: grid;
@@ -113,7 +110,6 @@ nav{
     border: 1px solid white;
     left: 0%;
     top: 60%;
-    bottom: 40%;
     height: fit-content;
 }
 
@@ -161,6 +157,11 @@ section:not(.divider){
     grid-template-columns: 2fr 3fr;
 }
 
+#quality{
+    justify-items: flex-end;
+    grid-template-columns: 1fr 1fr;
+}
+
 .rightarrows{
     text-align: right;
 }
@@ -178,10 +179,10 @@ section:not(.divider){
 }
 
 #wines{
-    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-columns: 3fr 2fr 2fr;
     padding: 50px 0;
     column-gap: 50px;
-    text-align: center;
+    justify-items: center;
 }
 
 #wines img{
@@ -192,40 +193,27 @@ section:not(.divider){
     grid-column: 1 / 4;
 }
 
-#quality {
-    grid-template-columns: 1fr 1fr;
-}
-
 #collage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
 }
 
-#collage img{
-    height: 250px;
-}
-
-#collage1, #collage2{
+#collage_inner{
     display: grid;
     column-gap: 2px;
     row-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-#collage1{
-    grid-template-columns: 52% 45%;
-    grid-template-rows: 1fr 2fr;
+#collage_inner img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
 }
 
-#collage1 img:nth-child(3){
-    grid-column: 1/3;
-}
-
-#collage2{
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 40% 60%;
-}
-
-#collage2 img:nth-child(3){
+#collage_inner div:last-child{
     grid-column: 1/3;
 }
 
@@ -256,7 +244,9 @@ footer ul a{
 @media (max-width:1450px){
     section#wines,
     section#pure_marlborough,
-    section#quality{
+    section#quality,
+    #climate,
+    #zero{
         grid-template-columns: 1fr;
     }
 

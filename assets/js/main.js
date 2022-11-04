@@ -5,7 +5,6 @@ fetch(`${BASE_URL}/search/photos/?query=wine&per_page=15&client_id=bwVpM_zDrAu_z
 .then(response => response.json())
 .then(data => {
     data["results"].forEach((result, index) => {
-        console.log(result)
         let img = document.createElement("img");
         img.src = result["urls"]["small"];
         divs[index].append(img);

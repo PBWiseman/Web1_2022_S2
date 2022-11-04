@@ -68,7 +68,7 @@ nav{
     display: none;
     width: 55%;
     top: 20%;
-    height: 55%;
+    height: 65%;
     left: 20%;
     background: #222;
 }
@@ -85,22 +85,40 @@ nav{
 
 #inner_popout h4{
     margin: 0;
+    font-size: medium;
 }
 
-#inner_popout div:nth-child(2),
-#inner_popout div:nth-child(3){
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: flex-end;
+#inner_popout div:first-of-type{
+    font-size: 50px;
 }
 
 #inner_popout div:first-of-type ul{
     margin-top: 25%;
+    margin-left: 20%;
 }
 
-#inner_popout div:first-of-type ul li{
-    font-size: 50px;
+.fa-x{
+    color: white;
+}
+
+#inner_popout div:nth-child(2),
+#inner_popout div:nth-child(3){
+    font-size: small;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: flex-start;
+}
+
+#inner_popout div:last-child div:first-child{
+    justify-self: end;
+    margin: 20px;
+}
+
+#inner_popout div:last-child ul:last-child{
+    justify-self: center;
+}
+
+#inner_popout li{
     padding: 10px;
 }
 

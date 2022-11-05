@@ -12,19 +12,18 @@ fetch(`${BASE_URL}/search/photos/?query=wine&per_page=15&client_id=bwVpM_zDrAu_z
 })
 
 let menu = document.querySelector("#popout")
-let menu_click = document.querySelector("button");
-let inner_menu_click = menu.querySelector("button")
-inner_menu_click.addEventListener("click", _ =>{
-  if (menu.style.display === "none") {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
-    }
+let background = document.querySelector("#background_cover")
+let menu_button = document.querySelector("button");
+let inner_menu_button = menu.querySelector("button")
+inner_menu_button.addEventListener("click", _ =>{
+  menu.style.display = "none";
+  background.style.display = "none";
 })
-menu_click.addEventListener("click", _ =>{
-  if (menu.style.display === "none") {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
-    }
+menu_button.addEventListener("click", _ =>{
+  menu.style.display = "block";
+  background.style.display = "block";
+})
+background.addEventListener("click", _ =>{
+  menu.style.display = "none";
+  background.style.display = "none";
 })

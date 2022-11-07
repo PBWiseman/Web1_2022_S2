@@ -22,10 +22,6 @@ ul {
 
 /* Main styles */
 
-p{
-    color: #999;
-}
-
 .divider {
     text-align: center;
     padding:0;
@@ -177,13 +173,27 @@ section:not(.divider){
 #zero,
 #climate {
     display: grid;
-    align-items: center;
+    align-items: start;
 }
 
 #pure_marlborough,
-#climate,
-#zero {
+#climate {
     grid-template-columns: 2fr 3fr;
+}
+
+#climate {
+    grid-template-columns: 2fr 4fr;
+}
+
+#zero {
+    grid-template-columns: 4fr 2fr;
+}
+
+#climate > div > img,
+#zero > div > img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 #quality{
@@ -250,24 +260,37 @@ footer {
     padding: 30px 15%;
     background-color: black;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight:900;
 }
 
 footer a {
     color: white;
-
+    text-decoration: none;
 }
 
-footer ul li:nth-of-type(3) img{
+footer > div:first-child{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+footer > div:first-child div:last-child{
+    align-self: flex-end;
+    font-size:x-small
+}
+
+footer > div:last-child{
+    text-align: right;
+}
+
+footer > div:last-child li:nth-of-type(3) img{
     height: 110px;
 }
 
-footer ul:nth-of-type(2) {
-    text-align: right;
-    font-weight: bolder;
-}
-
-footer ul a{
-    text-decoration: none;
+footer > div:last-child li{
+    padding: 5px; 
 }
 
 @media (max-width:1450px){

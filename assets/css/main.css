@@ -307,7 +307,13 @@ footer > div:last-child li{
     section#wines h2{
         grid-column: 1;
     }
-    main {
-        padding: 100px 5% 0;
+    :root{
+        --padding: 0 10%;
+    }
+}
+@media (max-width:800px){
+
+    :root{
+        --padding: 0;
     }
 }

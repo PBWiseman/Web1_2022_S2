@@ -1,3 +1,4 @@
+
 :root{
     --padding: 0 21%;
 }
@@ -42,6 +43,7 @@ ul {
     padding:0;
 }
 
+/* Header stylings */
 header {
     background-image: url(../img/header_background.webp);
     background-repeat: no-repeat;
@@ -70,9 +72,6 @@ header h1 {
     font-weight: 900;
 }
 
-nav{
-    position: fixed;
-}
 
 #background_cover{
     top: 0;
@@ -83,6 +82,11 @@ nav{
     opacity: .8;
     position: fixed;
     display: none;
+}
+
+/* Nav bar and popout menu */
+nav{
+    position: fixed;
 }
 
 #popout {

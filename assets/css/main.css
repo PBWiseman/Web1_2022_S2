@@ -131,7 +131,7 @@ nav{
     align-items: flex-start;
 }
 
-#inner_popout div:last-child div:first-child{
+#inner_popout>div:last-child>div:first-child{
     justify-self: end;
     margin: 20px;
 }
@@ -142,6 +142,12 @@ nav{
 
 #inner_popout li{
     padding: 10px;
+}
+
+#popout button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 #small_side {
@@ -164,6 +170,9 @@ button {
     width: 40px;
 }
 
+button:hover{
+    cursor: pointer;
+}
 
 section:not(.divider){
     padding: var(--padding);
@@ -315,13 +324,42 @@ footer > div:last-child li{
     section#pure_marlborough,
     section#quality,
     #climate,
-    #zero{
+    #zero,
+    #inner_popout{
         grid-template-columns: 1fr;
+    }
+
+    #popout {
+        height: 70%;
+    }
+        
+    #inner_popout h4{
+        font-size: small;
+    }
+
+    #inner_popout div:first-of-type{
+        font-size: 25px;
+    }
+
+
+    #inner_popout div:nth-child(2),
+    #inner_popout div:nth-child(3){
+        font-size: smaller;
+        grid-template-rows: 0fr 1fr 1fr;
+    }
+
+    #inner_popout div:last-child div:first-child{
+        margin: 0;
+    }
+
+    #inner_popout li{
+        padding: 2px;
     }
 
     section#wines h2{
         grid-column: 1;
     }
+
     :root{
         --padding: 0 0%;
     }

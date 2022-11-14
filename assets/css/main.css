@@ -19,6 +19,21 @@ ul {
     margin: 0;
 }
 
+/* Fade In */
+
+.fade_in{
+    opacity: 0;
+}
+
+.faded_in{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 /* Main styles */
 
@@ -295,7 +310,7 @@ footer > div:last-child li{
     padding: 5px; 
 }
 
-@media (max-width:1450px){
+@media (max-width:800px){
     section#wines,
     section#pure_marlborough,
     section#quality,
@@ -308,12 +323,6 @@ footer > div:last-child li{
         grid-column: 1;
     }
     :root{
-        --padding: 0 10%;
-    }
-}
-@media (max-width:800px){
-
-    :root{
-        --padding: 0;
+        --padding: 0 0%;
     }
 }

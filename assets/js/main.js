@@ -27,3 +27,18 @@ background.addEventListener("click", _ =>{
   menu.style.display = "none";
   background.style.display = "none";
 })
+
+let inView = element => {
+  let ele = element.getBoundingClientRect();
+  if ((ele.top - window.innerHeight + 20) < 0) 
+  {
+    element.classList.add("faded_in")
+    element.classList.remove("fade_in")
+  }
+}
+
+document.querySelectorAll(".fade_in").forEach(element => {
+  document.addEventListener("scroll", _ => {
+    inView(element)
+  })
+})

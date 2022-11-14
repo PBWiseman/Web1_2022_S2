@@ -38,6 +38,9 @@ let inView = element => {
 }
 
 document.querySelectorAll(".fade_in").forEach(element => {
+  document.addEventListener("DOMContentLoaded", _ => {
+    inView(element)
+  })
   document.addEventListener("scroll", _ => {
     inView(element)
   })

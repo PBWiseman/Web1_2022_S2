@@ -27,3 +27,10 @@ The features that I have not yet implemented are as follows:
 - Cookie notification popup
 - Other pages of the website
 - Mobile mode page opening effect
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/104882337/201569640-c5d239aa-e20a-4a3b-949c-11c289ec1c0b.png)
+Page header
+![image](https://user-images.githubusercontent.com/104882337/201570229-dcf22e3a-a274-4ecc-98b2-4c8356231769.png)
+Wines display panel

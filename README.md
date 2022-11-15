@@ -18,15 +18,14 @@ This website uses ES6 JavaScript, CSS, and HTML
 
 ## Roadmap
 
-The features that I have not yet implemented are as follows: 
+The features that I have not yet implemented are as follows:
 
-- Images fading back out on scroll up
-- Heart buttons on collage
-- Slight scroll back and forward on collage
-- Repeating image scrolling on Cool Climate Wine and Our Latest Release sections
-- Cookie notification popup
-- Other pages of the website
 - Mobile mode page opening effect
+- Heart buttons on collage
+- Other pages of the website
+- Slight scroll back and forward on collage
+- Cookie notification popup
+- Repeating image scrolling on Cool Climate Wine and Our Latest Release sections
 
 ## Screenshots
 

@@ -1,3 +1,5 @@
+/*  Generic styles
+========================================================================== */
 
 :root{
     --padding: 0 21%;
@@ -7,7 +9,6 @@
     box-sizing: border-box;
 }
 
-/* Generic reset styles */
 body {
     margin: 0;
     font-family: sans-serif;
@@ -20,7 +21,8 @@ ul {
     margin: 0;
 }
 
-/* Fade In */
+/*  Fade in animation
+    ========================================================================== */
 
 .fade_in{
     opacity: 0;
@@ -36,14 +38,10 @@ ul {
     to {opacity: 1;}
 }
 
-/* Main styles */
 
-.divider {
-    text-align: center;
-    padding:0;
-}
+/*  Header
+    ========================================================================== */
 
-/* Header stylings */
 header {
     background-image: url(../img/header_background.webp);
     background-repeat: no-repeat;
@@ -72,7 +70,20 @@ header h1 {
     font-weight: 900;
 }
 
+/*  ==========================================================================
+    Nav bars
+    ========================================================================== */
 
+    
+nav{
+    position: fixed;
+}
+
+/*  Popout menu
+    ========================================================================== */
+
+
+/* Background for popout menu */
 #background_cover{
     top: 0;
     left: 0;
@@ -84,11 +95,7 @@ header h1 {
     display: none;
 }
 
-/* Nav bar and popout menu */
-nav{
-    position: fixed;
-}
-
+/* Popout menu shell */
 #popout {
     display: none;
     width: 55%;
@@ -103,15 +110,25 @@ nav{
     text-decoration: none;
 }
 
+#popout h4{
+    margin: 0;
+    font-size: medium;
+}
+
+.fa-x{
+    color: white;
+}
+
+#popout li {
+    padding: 10px;
+}
+
+/* Inner popout menu 
+========================================================================== */
 #inner_popout{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr;
-}
-
-#inner_popout h4{
-    margin: 0;
-    font-size: medium;
 }
 
 #inner_popout div:first-of-type{
@@ -123,36 +140,45 @@ nav{
     margin-left: 20%;
 }
 
-.fa-x{
-    color: white;
-}
-
 #inner_popout div:nth-child(2),
-#inner_popout div:nth-child(3){
+#inner_popout div:nth-child(3) {
     font-size: small;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
     align-items: flex-start;
 }
 
-#inner_popout>div:last-child>div:first-child{
+#inner_popout>div:last-child>div:first-child {
     justify-self: end;
     margin: 20px;
 }
 
-#inner_popout div:last-child ul:last-child{
+#inner_popout div:last-child ul:last-child {
     justify-self: center;
 }
 
-#inner_popout li{
-    padding: 10px;
+/*  Menu button
+========================================================================== */
+
+button {
+    border: none;
+    background: transparent;
+    height: 40px;
+    width: 40px;
 }
 
-#popout button{
+button:hover{
+    cursor: pointer;
+}
+
+#popout button {
     position: absolute;
     right: 20px;
     top: 20px;
 }
+
+/*  Sidebar
+    ========================================================================== */
 
 #small_side {
     background: black;
@@ -167,33 +193,47 @@ nav#small_side ul li {
     padding: 10px;
 }
 
-button {
-    border: none;
-    background: transparent;
-    height: 40px;
-    width: 40px;
-}
-
-button:hover{
-    cursor: pointer;
-}
+/*  General section styles
+    ========================================================================== */
 
 section:not(.divider){
     padding: var(--padding);
 }
+
+.background_colour {
+    background-color: #f7f7f7;
+}
+
+.columns_text {
+    height: 100%;
+    width: 100%;
+    padding: 15% 40px;
+    line-height: 2;
+}
+
+.rightarrows{
+    text-align: right;
+}
+
+.divider {
+    text-align: center;
+    padding:0;
+}
+
+/* Top section
+   ========================================================================== */
 
 #top_section {
     padding-top: 50px;
     text-align: center;
 }
 
-#top_section h1 {
-    font-size: 30px;
-}
+#top_section h1 { font-size: 30px; }
 
-#top_section p {
-    font-size: 18px;
-}
+#top_section p {  font-size: 18px; }
+
+/* Main section styling
+   ========================================================================== */
 
 #pure_marlborough,
 #quality,
@@ -204,20 +244,12 @@ section:not(.divider){
     align-items: start;
 }
 
+#pure_marlborough { grid-template-columns: 2fr 3fr; }
 
-#pure_marlborough,
-#climate {
-    grid-template-columns: 2fr 3fr;
-}
-
-#climate {
-    grid-template-columns: 2fr 4fr;
-}
+#climate { grid-template-columns: 2fr 4fr; }
 
 #quality,
-#zero {
-    grid-template-columns: 4fr 2fr;
-}
+#zero { grid-template-columns: 4fr 2fr; }
 
 #quality > div > img,
 #pure_marlborough > div > img,
@@ -228,22 +260,8 @@ section:not(.divider){
     object-fit: cover;
 }
 
-
-.rightarrows{
-    text-align: right;
-}
-
-#outer_wines,
-.columns_text {
-    background-color: #f7f7f7;
-}
-
-.columns_text {
-    height: 100%;
-    width: 100%;
-    padding: 15% 40px;
-    line-height: 2;
-}
+/*  Wine section
+    ========================================================================== */
 
 #wines{
     grid-template-columns: 3fr 2fr 2fr;
@@ -260,16 +278,18 @@ section:not(.divider){
     grid-column: 1 / 4;
 }
 
-#collage {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2px;
+#wines{
+    text-align: center;
 }
 
-#collage_inner{
+/*  Collage
+    ========================================================================== */
+
+#collage,
+#collage_inner {
     display: grid;
-    column-gap: 2px;
     grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
 }
 
 #collage_inner img{
@@ -285,6 +305,9 @@ section:not(.divider){
 #collage_inner div:last-child img{
     height: 400px;
 }
+
+/*  Footer
+    ========================================================================== */
 
 footer {
     padding: 30px 15%;
@@ -311,40 +334,24 @@ footer > div:first-child div:last-child{
     font-size:x-small
 }
 
-footer > div:last-child{
-    text-align: right;
-}
+footer > div:last-child{ text-align: right; }
 
-footer > div:last-child li:nth-of-type(3) img{
-    height: 110px;
-}
+footer > div:last-child li:nth-of-type(3) img{ height: 110px; }
 
-footer > div:last-child li{
-    padding: 5px; 
-}
+footer > div:last-child li{ padding: 5px; }
+
+/*  Mobile mode
+    ========================================================================== */
 
 @media (max-width:800px){
-    section#wines,
-    section#pure_marlborough,
-    section#quality,
+    #wines,
+    #pure_marlborough,
+    #quality,
     #climate,
     #zero,
     #inner_popout{
         grid-template-columns: 1fr;
     }
-
-    #popout {
-        height: 70%;
-    }
-        
-    #inner_popout h4{
-        font-size: small;
-    }
-
-    #inner_popout div:first-of-type{
-        font-size: 25px;
-    }
-
 
     #inner_popout div:nth-child(2),
     #inner_popout div:nth-child(3){
@@ -352,19 +359,17 @@ footer > div:last-child li{
         grid-template-rows: 0fr 1fr 1fr;
     }
 
-    #inner_popout div:last-child div:first-child{
-        margin: 0;
-    }
+    #popout { height: 70%; }
+        
+    #inner_popout h4{ font-size: small; }
 
-    #inner_popout li{
-        padding: 2px;
-    }
+    #inner_popout div:first-of-type{ font-size: 25px; }
 
-    section#wines h2{
-        grid-column: 1;
-    }
+    #inner_popout div:last-child div:first-child{ margin: 0; }
 
-    :root{
-        --padding: 0 0%;
-    }
+    #inner_popout li{ padding: 2px; }
+
+    section#wines h2{ grid-column: 1; }
+
+    :root{ --padding: 0 0%; }
 }

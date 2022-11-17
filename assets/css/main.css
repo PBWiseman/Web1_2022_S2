@@ -81,8 +81,10 @@ header h1 {
     ========================================================================== */
 
     
-nav{
+nav,
+#background_cover{
     position: fixed;
+    z-index: 5;
 }
 
 /*  Popout menu
@@ -97,7 +99,6 @@ nav{
     height: 100%;
     background-color: black;
     opacity: .8;
-    position: fixed;
     display: none;
 }
 
@@ -365,7 +366,7 @@ footer > div:last-child li{ padding: 5px; }
         grid-template-rows: 0fr 1fr 1fr;
     }
 
-    #popout { height: 70%; }
+    #popout { height: 75%; }
         
     #inner_popout h4{ font-size: small; }
 
@@ -378,10 +379,4 @@ footer > div:last-child li{ padding: 5px; }
     section#wines h2{ grid-column: 1; }
 
     :root{ --padding: 0 0%; }
-}
-@media (max-height:1000px){
-    #popout { 
-        top: 10%;
-        height: 90%; 
-    }
 }
